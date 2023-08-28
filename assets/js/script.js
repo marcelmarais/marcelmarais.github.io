@@ -157,3 +157,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+(function(){
+  emailjs.init('txtAO6j71CVwmMAHx');
+})();
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      var fullName = document.querySelector('[name="fullname"]').value;
+      var email = document.querySelector('[name="email"]').value;
+      var message = document.querySelector('[name="message"]').value;
+      
+      emailjs.send('service_o6evh1r', 'template_s3ynuiy', {
+        fullName: fullName,
+          email: email,
+          message: message
+      })
+      .then(function(response) {
+          console.log('Success!', response.status, response.text);
+      }, function(error) {
+          console.log('Failed...', error);
+      });
+  });
+});

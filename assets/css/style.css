@@ -74,7 +74,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+--ff-poppins: 'Inter', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -333,6 +333,20 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
+  border-radius: 20px;
+}
+
+.link {
+  display: inline;
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: whitesmoke;
+}
+
+.profile-pic {
   border-radius: 20px;
 }
 
