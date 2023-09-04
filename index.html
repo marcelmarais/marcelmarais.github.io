@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="frame-ancestors https:">
+
   <title>Marcel Marais - Personal Site</title>
 
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.jpg">
 
   <!--
     - custom css link
@@ -26,9 +28,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+  
 
-
-</head>
+</>
 
 <body>
 
@@ -172,7 +174,7 @@
             <button class="navbar-link" data-nav-link>Blog / Research</button>
           </li>
 
-          <li class="navbar-item/research">
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -190,15 +192,17 @@
 
       <article class="about  active" data-page="about">
 
-        <header>
+        <er>
           <h2 class="h2 article-title">About me</h2>
-        </header>
+        </er>
 
         <section class="about-text">
           <p>
-            Hello! I'm Marcel Marais, a dedicated Machine Learning Engineer & 
-            Data Scientist with a first-class B.Sc. (Hons) in Computer Science and Artificial Intelligence 
-            from The University of Edinburgh. Currently, I am leading the development of <a class="link" href="https://www.moonsift.com/search" target="_blank">Moonsift Copilot</a>, an advanced shopping assistant with deep semantic understanding in fashion and retail.</p>
+            Hello! I'm Marcel, a Machine Learning Engineer & 
+            Data. Currently, I am leading the development of <a class="link" href="https://www.moonsift.com/search" target="_blank">Moonsift Copilot</a>, an advanced shopping assistant with deep semantic understanding in fashion and retail.
+            I completed my B.Sc. in Computer Science and Artificial Intelligence with First Class Honours at the University of Edinburgh.
+          </p> 
+            from The University of Edinburgh.
 
           <p>
             My professional journey includes consulting internships in which I focused on empowering large (FTSE250) companies to solve their complex growth and operational challenges by leveraging their data. Additionally, I have been involved in deep learning research focused on  seaport congestion prediction, synthetic image detection in latent diffusion models and autoencoder performance optimisation. 
@@ -213,75 +217,12 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">What I'm doing</h3>
 
           <ul class="service-list">
 
-            <li class="service-item">
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7076881400494268417" height="370" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </ul>
 
         </section>
@@ -318,7 +259,6 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
               <time datetime="2021-06-14">14 June, 2021</time>
 
@@ -348,9 +288,9 @@
 
       <article class="resume" data-page="resume">
 
-        <header>
+        <er>
           <h2 class="h2 article-title">Resume</h2>
-        </header>
+        </er>
 
 
         <section class="timeline">
@@ -511,9 +451,9 @@
 
       <article class="portfolio" data-page="portfolio">
 
-        <header>
+        <er>
           <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+        </er>
 
         <section class="projects">
 
@@ -751,9 +691,9 @@
 
       <article class="blog" data-page="blog / research">
 
-        <header>
+        <er>
           <h2 class="h2 article-title">Blog & Research</h2>
-        </header>
+        </er>
 
         <section class="blog-posts">
 
@@ -815,117 +755,9 @@
               </a>
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
+    
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
 
           </ul>
 
@@ -946,9 +778,9 @@
 
       <article class="contact" data-page="contact">
 
-        <header>
+        <er>
           <h2 class="h2 article-title">Contact</h2>
-        </header>
+        </er>
 
 
 

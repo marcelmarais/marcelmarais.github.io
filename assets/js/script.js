@@ -172,13 +172,22 @@ document.addEventListener('DOMContentLoaded', function() {
       
       emailjs.send('service_o6evh1r', 'template_s3ynuiy', {
         fullName: fullName,
-          email: email,
-          message: message
+        email: email,
+        message: message
       })
       .then(function(response) {
-          console.log('Success!', response.status, response.text);
-      }, function(error) {
-          console.log('Failed...', error);
-      });
+        console.log('Success!', response.status, response.text);
+        // Find the <span> inside the button and update its text
+        const spanElement = formBtn.querySelector("span");
+        if (spanElement) {
+            spanElement.innerText = "Success! Email sent.";
+        }
+    }, function(error) {
+        console.log('Failed...', error);
+        const spanElement = formBtn.querySelector("span");
+        if (spanElement) {
+            spanElement.innerText = "Error. Email not sent.";
+        }
+    });
   });
 });
