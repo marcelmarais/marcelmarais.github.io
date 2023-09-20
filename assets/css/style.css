@@ -470,12 +470,24 @@ main {
   position: relative;
   padding-bottom: 73.5%;  /* Aspect ratio for 504x370 (width x height) */
   overflow: hidden;
-  max-width: 550px;  /* Maximum width for the iframe container */
+  max-width: 500px;  /* Maximum width for the iframe container */
+  max-height: 350px;  /* Maximum width for the iframe container */
   margin: 0 auto;  /* Centering the iframe container */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  /* Subtle shadow for distinction */
   border-radius: 15px;  /* Rounded borders */
   overflow: hidden;  /* Ensures the iframe corners don't peek out */
 }
+
+
+.linkedin-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 /*-----------------------------------*\
   #NAVBAR
